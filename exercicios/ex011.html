@@ -8,20 +8,33 @@
 </head>
 <body>
     <h1>Qual é seu pais?</h1>
-    seu pais: <input type="text" name="txpais" id="txpais">
+    seu pais: <input type="text" name="txpais" id="txpais"> +
 
-        <input type="buttom" value="Verificar" onclick="calcular()">
+        <input type="button" value="Verificar" onclick="calcular()">
 
     <div id="res">
 
     </div>
 
         <script>
+            function calcular()
+            var txpais = window.document.querySelector('input#txpais')
+            var res = window.document.querySelector('div#res')
+            var pais = 'Brasil'
+            if (pais == 'Brasil') {
+                res.innerHTML += `<p> Voce é  Brasileiro`
+            }
+            else  {
+
+                res.innerHTML +=`<p>Voce é estrangeiro!</p>`
+            }
+
+            
         
 
 
 
-     </script>
+     </script>0
     
     
 </body>
