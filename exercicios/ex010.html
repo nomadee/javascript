@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Graphics-Vibe-Developer-Javascript.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style-ex10.css">
+    
+    <title>JavaScript</title>
+</head>
+<h1>sistema de multas</h1>
+
+
+<p id="pr">Velocidade do carro :</p> <input  type="number"  id="txtvel"> <p> km/h </p>
+
+
+<input id="botao" type="button" value="verificar" onclick="calcular()">
+
+<div id="res"></div>
+<script>
+    
+    function calcular()
+    {
+        var txtve = window.document.getElementById('txtvel')
+        var res = window.document.getElementById('res')
+        var vel = Number(txtve.value)
+        res.innerHTML=`Sua velocidade foi de ${vel} km/h`
+
+        if (vel > 80) {
+            res.innerHTML +=  `<p>voce esta multado</p>`
+        }
+        if (vel < 8){
+        res.innerHTML += `<p> Dirija com seguranca</p>`
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+</body>
+</html>

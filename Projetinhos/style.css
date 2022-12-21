@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+    font: normal, 20px, Arial;
+
+}
+
+header{
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.587);
+    padding: 30px;
+    margin-bottom: 100px;
+    font-size: 2em;
+    box-shadow: 5px 5px 10px rgb(103, 6, 122, 0.587);
+
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(103, 6, 122, 0.587);
+
+}
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+#imagem {
+    
+    border-radius: 200px;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+
+}

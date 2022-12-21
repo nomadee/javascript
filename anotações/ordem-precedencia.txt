@@ -1,0 +1,18 @@
+                                
+
+                                     ordem de precedencia
+
+aritimeticos: (), **, *, /, %, +, -
+
+relacionais: quem aparecer primeiro, leitura feita da esquerda pra direita
+
+logicos : ! ,  %% ,  || , 
+ 
+
+                                    
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pento</title>
+</head>
+<body>
+    <h1>Qual seu pais?</h1>
+
+    <input type="text" name="txtn1" id="txtn1">
+
+    <input id="botao" type="button" value="verificar" onclick="verificar()">
+
+    <div id="resultado"></div>
+
+
+    <script>
+        function verificar()
+        {
+            var pais = 'Brasil'
+            var txtn = window.document.getElementById('txtn1')
+            var res = window.document.getElementById ('resultado')
+            var vel = (txtn.value)
+            
+            if (txtn != 'Brasil' ) {
+            res.innerHTML +=`voce  e estrangeiro `}
+
+        else (txtn1 == 'Brasil')
+        {
+            res.innerHTML += `voce e Brasileiro`
+        }
+        
+            
+        }
+
+
+    </script>
+
+  
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

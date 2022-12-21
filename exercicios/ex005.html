@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Graphics-Vibe-Developer-Javascript.ico" type="image/x-icon">
     <title>DOM</title>
     <style>
         body {
             background-color: aqua;
             color: rgb(0, 0, 0);
             font: 20px normal arial;
+            text-align: center;
         }
         h1 {
             text-align: center;
@@ -29,17 +31,33 @@
 </head>
 <body>
     <h1>USANDO DOM</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt voluptatem vel doloremque nisi ab, magnam necessitatibus molestiae labore. Cupiditate saepe eum ullam aliquam. Sint error magni repellat at mollitia rerum.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem nemo perspiciatis ipsum, itaque, alias maxime obcaecati quibusdam rerum iure est accusantium, quis reprehenderit culpa error quaerat aperiam omnis fuga.</p>
-    <div id="msg"> clique em mim  </div>
+ 
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem nemo perspiciatis ipsum, itaque, alias maxime obcaecati quibusdam rerum iure est accusantium, quis reprehenderit culpa error quaerat aperiam omnis fuga.
+    </p>
+
+    <p class="classe">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima explicabo, ipsum repellendus harum recusandae, ducimus accusantium quibusdam nemo nihil laudantium beatae est a aut iure numquam repudiandae doloribus dolores aperiam?
+    </p>
+
+    <div id="sinuca">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic odit magni quos corporis saepe eveniet adipisci, totam, repellat deleniti at aspernatur, optio laboriosam ipsam sint exercitationem nobis fugiat libero?  
+
+    </div>
 
 
     <script>
         var corpo = window.document.body
-        var p1 = window.document.getElementsByName('p')[1]
-        var d = document.getElementById('msg')
-        d.style.background ='greenyellow'//altera o fundo do <p> selecionado
-        d.innerText ='vegeta'//altera o texto
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.background = 'red' 
+        
+        var p2 = window.document.querySelector('p.classe')
+        p2.style.color ='blue'
+
+        var d = window.document.getElementById('sinuca')
+        d.style.color = 'red'
+
+      
 
 
 
